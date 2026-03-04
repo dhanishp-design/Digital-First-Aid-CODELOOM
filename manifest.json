@@ -1,0 +1,22 @@
+{
+  "name": "Digital First Aid Assistant",
+  "short_name": "FirstAid Assist",
+  "description": "Instant help during emergencies, anytime, anywhere.",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#E63946",
+  "background_color": "#F1FAEE",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

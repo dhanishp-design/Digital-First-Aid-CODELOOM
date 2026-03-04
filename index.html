@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Digital First Aid Assistant</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <meta name="theme-color" content="#E63946">
+</head>
+
+<body>
+
+  <!-- Top App Bar -->
+  <header class="app-header">
+    <button id="btn-back" class="hidden" aria-label="Back">🔙</button>
+    <div class="header-titles">
+      <h1>Digital First Aid Assistant</h1>
+      <p>Instant help during emergencies</p>
+    </div>
+    <div class="controls">
+      <label class="kid-toggle" aria-label="Kid Mode">
+        <input type="checkbox" id="kid-mode-toggle">
+        <span class="toggle-slider">👶</span>
+      </label>
+      <button id="btn-voice-mode" class="voice-mode-btn" aria-label="Voice Emergency Mode">🎤 Mode</button>
+    </div>
+  </header>
+
+  <!-- Screens Container -->
+  <main id="app-content">
+
+    <!-- Home Screen -->
+    <section id="screen-home" class="screen active">
+      <div class="grid">
+        <div class="card" data-target="cpr">
+          <img src="images/cpr.png" alt="CPR icon">
+          <h2>CPR & Unconscious Person</h2>
+          <p>Revive someone who isn't breathing</p>
+          <button class="start-btn">Start</button>
+        </div>
+        <div class="card" data-target="burns">
+          <img src="images/burn.png" alt="Burns icon">
+          <h2>Burns Emergency</h2>
+          <p>Treat heat, chemical or electrical burns</p>
+          <button class="start-btn">Start</button>
+        </div>
+        <div class="card" data-target="bleeding">
+          <img src="images/bleeding.png" alt="Bleeding icon">
+          <h2>Bleeding Control</h2>
+          <p>Stop severe blood loss</p>
+          <button class="start-btn">Start</button>
+        </div>
+        <div class="card" data-target="choking">
+          <img src="images/choking.png" alt="Choking icon">
+          <h2>Choking</h2>
+          <p>Clear airway blockages</p>
+          <button class="start-btn">Start</button>
+        </div>
+      </div>
+
+      <div class="action-buttons-bottom">
+        <button id="btn-alert" class="primary-action-btn pulse-alert">📍 Send Emergency Alert</button>
+        <button id="btn-hospital" class="secondary-action-btn">🏥 Find Nearby Hospital</button>
+      </div>
+    </section>
+
+    <!-- Emergency Detail Screen Template -->
+    <section id="screen-detail" class="screen hidden">
+      <div class="detail-header">
+        <h2 id="detail-title">Title</h2>
+        <img id="detail-image" src="" alt="" class="illustration">
+      </div>
+      <div class="voice-controls">
+        <button id="btn-play-voice" class="voice-btn play-btn">🔊 Play Voice Guidance</button>
+        <button id="btn-stop-voice" class="voice-btn stop-btn hidden">⏹ Stop</button>
+      </div>
+      <div class="steps-container">
+        <ol id="standard-steps" class="step-list"></ol>
+        <div id="kid-steps" class="kid-step-list hidden"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Voice Recognition Overlay -->
+  <div id="voice-listening-overlay" class="overlay hidden">
+    <div class="voice-modal">
+      <div class="mic-icon animate-pulse">🎤</div>
+      <h3>Listening...</h3>
+      <p>Say "Someone fainted", "I have a burn", etc.</p>
+      <button id="btn-cancel-voice">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Share Location Modal -->
+  <div id="share-modal-overlay" class="overlay hidden">
+    <div class="voice-modal share-modal">
+      <h3>Share Location</h3>
+      <p>Choose an app to send your emergency coordinates:</p>
+
+      <a id="btn-share-sms" href="#" class="share-btn sms-btn">💬 Send via SMS</a>
+      <a id="btn-share-wa" href="#" class="share-btn wa-btn">🟩 Send via WhatsApp</a>
+      <button id="btn-share-native" class="share-btn native-btn">🔗 More Options</button>
+
+      <button id="btn-cancel-share" class="cancel-link">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Floating Call Button -->
+  <a href="tel:108" class="fab-call" aria-label="Call 108">
+    <span class="fab-icon">📞</span>
+    <span>CALL 108</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
