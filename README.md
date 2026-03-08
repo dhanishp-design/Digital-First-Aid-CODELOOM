@@ -5,10 +5,13 @@ Digital First Aid is a **smart web-based emergency assistance platform** designe
 The platform helps users identify symptoms, understand possible medical situations, and receive step-by-step first aid instructions in real time.
 
 This project aims to **bridge the critical gap between an emergency and medical help.**
+>
+***
 
 ## 🌍 Problem Statement
 
 In **emergency situations**, people often panic and lack knowledge of **basic first aid.** This **delay in response** can worsen injuries or become life-threatening before professional medical help arrives. There is a need for a **simple digital solution** that provides quick and clear first aid guidance during emergencies.
+
 
 ## 💡 Solution
 
@@ -23,6 +26,9 @@ Digital First Aid provides a **smart digital assistant** that guides users throu
 • Quick emergency contacts
 
 This ensures that anyone can **perform basic life-saving actions even without medical training.**
+
+***
+>
 
 ## 🚀 Key Features
 **🧠 Smart Emergency Detection**
@@ -49,6 +55,9 @@ Simple design with clear buttons and easy navigation for quick use during emerge
 
 Works on any device with a web browser, making emergency help always available.
 
+>
+***
+
 ## 🎯 Target Users
 
 Digital First Aid is useful for:
@@ -69,6 +78,26 @@ Travelers
 
 Basically anyone who may face an emergency situation.
 
+>
+***
+
+## 📂 Project Structure
+
+```
+Digital-First-Aid
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets
+│   ├── icons
+│   ├── images
+│
+└── README.md
+```
+***
+>
 ## 📈 Future Improvements
 
 • 🤖 AI-based symptom detection
@@ -82,6 +111,9 @@ Basically anyone who may face an emergency situation.
 • 📱 Mobile App Version
 
 • 🧠 Offline emergency mode
+
+>
+***
 
 ## 💼 Business Potential
 
@@ -103,6 +135,8 @@ Possible customers:
 
 Organizations can **license the platform to improve workplace safety.**
 
+***
+>
 ## 🏆 Hackathon Achievement
 
 This project was recognized at the **CodeLoom Hackathon** organized by
@@ -111,19 +145,22 @@ This project was recognized at the **CodeLoom Hackathon** organized by
 R. H. Sapat College of Engineering, Management Studies and Research, Nashik**
 
 🏅 Award: **_Best Problem Understanding_**
-
+***
+>
 ## 👨‍💻 Author
 
 Dhanish Harish Poojary
 
 B.Tech – Artificial Intelligence & Data Science
+
 Maratha Vidya Prasarak Samaj's
 KBT College of Engineering, Nashik
 
 GitHub: [https://github.com/dhanishp-design](https://github.com/dhanishp-design)
 
 LinkedIn: www.linkedin.com/in/dhanish-harish-poojary
-
+***
+>
 ## ⭐ Support
 
 If you like this project, consider giving it a star ⭐ on GitHub to support the development.
